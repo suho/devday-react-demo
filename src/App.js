@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import Flat from './components/flat';
+import './App.css'
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <div className='app'>
-          <div className='main'>
-            <div className='search'></div>
-            <div className='flats'></div>
-          </div>
-          <div className='map'></div>
+      <div className='app'>
+        <div className='main'>
+          <div className='search'></div>
+          <div className='flats'></div>
         </div>
+        <div className='map'></div>
       </div>
     );
   }
