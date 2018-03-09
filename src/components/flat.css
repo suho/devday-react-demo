@@ -1,0 +1,14 @@
+.flat {
+
+}
+
+.flat-picture {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.flat-title {
+    margin-top: 10px;
+    font-weight: bold;
+}
