@@ -3,22 +3,30 @@ import './App.css'
 import Flat from './components/flat';
 
 class App extends Component {
-  render() {
-    const flat = {
-      "name": "Trường Bách Khoa Đà Nẵng",
-      "imageURL": "https://raw.githubusercontent.com/suhv/devday-react-demo/master/resources/flat1.png",
-      "price": 0,
-      "lat": 48.884211,
-      "lng": 2.345890
+  constructor(props) {
+    super(props);
+    this.state = {
+      flats: []
     }
+  }
 
-    const flats = [flat, flat, flat, flat, flat]
+  componentDidMount() {
+    fetch('https://raw.githubusercontent.com/suhv/devday-react-demo/master/resources/flats.json')
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          flats: data
+        })
+      })
+  }
+
+  render() {
     return (
       <div className='app'>
         <div className='main'>
           <div className='search'></div>
           <div className='flats'>
-            {flats.map(flat => {
+            {this.state.flats.map(flat => {
               return <Flat flat={flat} />
             })}
           </div>
