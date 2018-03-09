@@ -5,7 +5,7 @@ class Marker extends Component {
     render() {
         return (
             <div className='marker'>
-                {this.props.title}
+                {this.props.title}$
             </div>
         );
     }

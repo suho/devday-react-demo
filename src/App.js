@@ -9,11 +9,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      flats: []
-    }
-    this.center = {
-      lat: 16.047079,
-      lng: 108.206230
+      flats: [],
+      selectedFlat: null,
     }
   }
 
@@ -28,6 +25,11 @@ class App extends Component {
   }
 
   render() {
+    let center = { lat: 16.047079, lng: 108.206230 };
+    if (this.state.selectedFlat) {
+      const selectedFlat = this.state
+      center = { lat: selectedFlat.lat, lng: selectedFlat.lng }
+    }
     return (
       <div className='app'>
         <div className='main'>
@@ -40,8 +42,8 @@ class App extends Component {
         </div>
         <div className='map'>
           <GoogleMapReact
-            center={this.center}
-            zoom={11}>
+            center={center}
+            zoom={13}>
             {this.state.flats.map(flat => {
               return <Marker
                 lat={flat.lat}

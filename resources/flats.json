@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "name": "Test Name 1",
     "imageURL": "https://raw.githubusercontent.com/suhv/devday-react-demo/master/resources/flat1.png",
     "price": 100,
@@ -7,6 +8,7 @@
     "lng": 108.206230
   },
   {
+    "id": 2,
     "name": "Test Name 2",
     "imageURL": "https://raw.githubusercontent.com/suhv/devday-react-demo/master/resources/flat1.png",
     "price": 120,
@@ -14,6 +16,7 @@
     "lng": 108.234253
   },
   {
+    "id": 3,
     "name": "Test Name 3",
     "imageURL": "https://raw.githubusercontent.com/suhv/devday-react-demo/master/resources/flat1.png",
     "price": 110,
@@ -21,6 +24,7 @@
     "lng": 108.221164
   },
   {
+    "id": 4,
     "name": "Test Name 4",
     "imageURL": "https://raw.githubusercontent.com/suhv/devday-react-demo/master/resources/flat1.png",
     "price": 310,
@@ -28,6 +32,7 @@
     "lng": 108.222439
   },
   {
+    "id": 5,
     "name": "Test Name 5",
     "imageURL": "https://raw.githubusercontent.com/suhv/devday-react-demo/master/resources/flat1.png",
     "price": 210,
@@ -35,6 +40,7 @@
     "lng": 108.214757
   },
   {
+    "id": 6,
     "name": "Test Name 6",
     "imageURL": "https://raw.githubusercontent.com/suhv/devday-react-demo/master/resources/flat1.png",
     "price": 1000,
@@ -42,6 +48,7 @@
     "lng": 108.230550
   },
   {
+    "id": 7,
     "name": "Test Name 7",
     "imageURL": "https://raw.githubusercontent.com/suhv/devday-react-demo/master/resources/flat1.png",
     "price": 110,
@@ -49,6 +56,7 @@
     "lng": 108.231451
   },
   {
+    "id": 8,
     "name": "Test Name 8",
     "imageURL": "https://raw.githubusercontent.com/suhv/devday-react-demo/master/resources/flat1.png",
     "price": 103,
