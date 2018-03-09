@@ -11,15 +11,16 @@ class App extends Component {
       "lat": 48.884211,
       "lng": 2.345890
     }
+
+    const flats = [flat, flat, flat, flat, flat]
     return (
       <div className='app'>
         <div className='main'>
           <div className='search'></div>
           <div className='flats'>
-            <Flat flat={flat} />
-            <Flat flat={flat} />
-            <Flat flat={flat} />
-            <Flat flat={flat} />
+            {flats.map(flat => {
+              return <Flat flat={flat} />
+            })}
           </div>
         </div>
         <div className='map'></div>
