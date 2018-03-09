@@ -5,9 +5,9 @@ import Flat from './components/flat';
 class App extends Component {
   render() {
     const flat = {
-      "name": "Test Name 2",
+      "name": "Trường Bách Khoa Đà Nẵng",
       "imageURL": "https://raw.githubusercontent.com/suhv/devday-react-demo/master/resources/flat1.png",
-      "price": 10,
+      "price": 0,
       "lat": 48.884211,
       "lng": 2.345890
     }
