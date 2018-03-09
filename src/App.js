@@ -24,10 +24,14 @@ class App extends Component {
       })
   }
 
+  onClickFlat = flat => {
+    this.setState({ selectedFlat: flat });
+  }
+
   render() {
     let center = { lat: 16.047079, lng: 108.206230 };
     if (this.state.selectedFlat) {
-      const selectedFlat = this.state
+      const selectedFlat = this.state.selectedFlat
       center = { lat: selectedFlat.lat, lng: selectedFlat.lng }
     }
     return (
@@ -36,7 +40,7 @@ class App extends Component {
           <div className='search'></div>
           <div className='flats'>
             {this.state.flats.map(flat => {
-              return <Flat flat={flat} />
+              return <Flat key={flat.id} flat={flat} onClick={this.onClickFlat} />
             })}
           </div>
         </div>
@@ -46,9 +50,12 @@ class App extends Component {
             zoom={13}>
             {this.state.flats.map(flat => {
               return <Marker
+                key={flat.id}
                 lat={flat.lat}
                 lng={flat.lng}
-                title={flat.price} />
+                title={flat.price}
+                selected={flat === this.state.selectedFlat}
+              />
             })}
           </GoogleMapReact>
         </div>
