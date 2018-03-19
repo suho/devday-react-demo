@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './styles/index.css';
+import HelloMessage from './components/hello-message';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const message = <HelloMessage name="Su Ho V." />
+
+ReactDOM.render(message, document.getElementById('root'));
