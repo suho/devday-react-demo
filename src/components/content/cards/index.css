@@ -1,0 +1,13 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 100%;
+}
+
+.card {
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+  height: 300px;
+  background-color: #E0E0E0;
+}

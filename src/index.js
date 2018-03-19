@@ -1,8 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/index.css';
-import HelloMessage from './components/hello-message';
+import Header from './components/header';
+import Footer from './components/footer';
+import Content from './components/content';
 
-const message = <HelloMessage name="Su Ho V." />
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header />
+        <Content />
+        <Footer />
+      </div>
+    );
+  }
+}
 
-ReactDOM.render(message, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
