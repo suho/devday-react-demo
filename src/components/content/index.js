@@ -13,11 +13,7 @@ class Content extends React.Component {
   }
 
   addMoreCards = () => {
-    const lastIndex = this.state.length;
-    let newCards = [];
-    for (let index = 0; index < 4; index++) {
-      newCards.push({ id: lastIndex + index + 1 })
-    }
+    const newCards = [{}, {}, {}, {}];
     this.setState({ cards: [...this.state.cards, ...newCards] });
   }
 
