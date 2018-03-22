@@ -1,0 +1,15 @@
+{
+  "name": "Ho Van Su",
+  "age": 24,
+  "university": "DUT",
+  "work": "@AsianTech",
+  "tech": [
+    "iOS",
+    "React",
+    "React Native",
+    "NodeJS",
+    "..."
+  ],
+  "mail": "hovansu.it@gmail.com",
+  "github": "~/suhv"
+}
