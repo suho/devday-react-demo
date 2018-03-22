@@ -8,7 +8,7 @@ class Content extends React.Component {
   constructor(params) {
     super(params);
     this.state = {
-      cards: []
+      cards: [{}, {}, {}, {}]
     }
   }
 
